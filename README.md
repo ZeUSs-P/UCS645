@@ -8,7 +8,7 @@
 ## Course Details
 **Course Code:** UCS645  
 **Course Name:** Parallel & Distributed Computing  
-**Submitted To:** **Dr. Said Nalband**
+**Submitted To:** **Dr. Saif Nalband**
 
 ---
 
