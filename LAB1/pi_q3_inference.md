@@ -10,5 +10,5 @@ Because the workload is compute-bound, thread oversubscription remains effective
 ![Execution Output](images/q3_pi.png)
 
 ### Performance Graph
-![Speedup vs Threads](images/q3_result.png)
+![Speedup vs Threads](images/q3_graph.png)
 
