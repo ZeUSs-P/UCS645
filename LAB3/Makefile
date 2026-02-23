@@ -1,7 +1,4 @@
-# Makefile for Correlation Calculator
-# Refactored anti-plagiarism version with detailed performance tables
-# Author: [Your Name]
-# Course: UCS645 - Parallel & Distributed Computing
+
 
 # Compiler settings
 CXX = g++
