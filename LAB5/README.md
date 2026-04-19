@@ -10,7 +10,7 @@
 | 4 | 0.000935 | 0.10x | 2.43% | 97.72% |
 | 8 | 0.001567 | 0.06x | 0.80% | 98.49% |
 
-![DAXPY Speedup and Efficiency](/home/piyush/Documents/UCS645/LAB5-p/daxpy_graph.png)
+![DAXPY Speedup and Efficiency](/home/piyush/Documents/UCS645/LAB5/daxpy_graph.png)
 
 ### My Thoughts & Takeaways
 - This DAXPY code is a great example of a workload that's totally bottlenecked by memory and network communication rather than actual math.
@@ -31,7 +31,7 @@
 | 8 | 0.218841 s | 0.039762 s | 5.50x |
 | 16 | 0.528416 s | 0.109282 s | 4.84x |
 
-![Broadcast Race Execution Time](/home/piyush/Documents/UCS645/LAB5-p/bcast_graph.png)
+![Broadcast Race Execution Time](/home/piyush/Documents/UCS645/LAB5/bcast_graph.png)
 
 ### My Thoughts & Takeaways
 - This experiment really showed me why network topology and algorithms matter so much when sending data to everyone.
@@ -51,7 +51,7 @@
 | 4 | 0.918522 | 3.63x | 90.75% |
 | 8 | 0.759178 | 4.39x | 54.87% |
 
-![Dot Product Speedup and Efficiency](/home/piyush/Documents/UCS645/LAB5-p/dot_graph.png)
+![Dot Product Speedup and Efficiency](/home/piyush/Documents/UCS645/LAB5/dot_graph.png)
 
 ### My Thoughts & Takeaways
 - This 500-million-element dot product taught me how to handle datasets that are way too big to fit in the RAM of a single computer.
@@ -70,7 +70,7 @@
 | 4 (1M+3S) | 0.023242 | 2.01x | 100.50% |
 | 8 (1M+7S) | 0.054231 | 0.86x | 21.50% |
 
-![Prime Search Speedup and Efficiency](/home/piyush/Documents/UCS645/LAB5-p/prime_graph.png)
+![Prime Search Speedup and Efficiency](/home/piyush/Documents/UCS645/LAB5/prime_graph.png)
 
 ### My Thoughts & Takeaways
 - This experiment was my introduction to dynamic load balancing, which is super important when some tasks take longer than others.
@@ -91,7 +91,7 @@
 | 4 (1M+3S) | 0.0080 | 1.41x | 70.62% | 81.72% |
 | 8 (1M+7S) | 0.0142 | 0.80x | 19.89% | 83.47% |
 
-![Perfect Search Speedup and Efficiency](/home/piyush/Documents/UCS645/LAB5-p/perfect_graph.png)
+![Perfect Search Speedup and Efficiency](/home/piyush/Documents/UCS645/LAB5/perfect_graph.png)
 
 ### My Thoughts & Takeaways
 - This perfect number search really proved to me how bad fine-grained Master-Slave architectures can be, even when the math is a bit harder.
