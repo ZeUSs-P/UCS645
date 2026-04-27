@@ -16,6 +16,8 @@ I used `N = 1024`, created input/output arrays, moved data host-to-device, and l
 | Expected Sum | 524800 |
 | Verification | PASS |
 
+![Problem 1 Sum Validation Graph](problem1_sum_graph.png)
+
 ### My Thoughts & Takeaways
 - Both methods match the expected value exactly.
 - This confirms that different threads in the same kernel can branch into separate logical tasks safely.
@@ -38,6 +40,8 @@ File used: `problem2_parallel_mergesort.cu`.
 | Method (b) Time | 0.302016 ms |
 | CPU Sorted Check | YES |
 | GPU Sorted Check | YES |
+
+![Problem 2 Timing Comparison Graph](problem2_timing_graph.png)
 
 ### Comparison
 - For this small input size (`n=1000`), CPU method is faster in my run.
@@ -78,6 +82,8 @@ File used: `problem2_parallel_mergesort.cu`.
 | Correctness Check | PASS |
 | Theoretical BW | 192.024 GB/s |
 | Measured BW | 151.211 GB/s |
+
+![Problem 3 Bandwidth Comparison Graph](problem3_bandwidth_graph.png)
 
 ### My Thoughts & Takeaways
 - Measured bandwidth is lower than theoretical, which is expected in real-world conditions.
