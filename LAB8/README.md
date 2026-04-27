@@ -37,6 +37,8 @@ I followed the same style as my previous labs: implement, run, verify correctnes
 ### My Takeaway
 GPU gives a strong speedup at larger vector sizes, while transfer overhead dominates small transfers. Warp divergence produced measurable but moderate slowdown in this test.
 
+![Problem 1 GPU Architecture & CUDA Kernel Profiling](problem1_bandwidth_graph.png)
+
 ---
 
 ## Problem 2: Parallel Reduction & Shared Memory Optimization (`ex02_memory_hierarchy.cu`)
@@ -68,6 +70,7 @@ GPU gives a strong speedup at larger vector sizes, while transfer overhead domin
 ### My Takeaway
 Stride 32 is clearly slower due to heavy bank conflicts, while low-stride patterns are faster. Shared-memory and warp-level methods are correct and efficient for reductions/histograms.
 
+![Problem 2 Parallel Reduction & Shared Memory Optimization ](problem2_bank_conflict_graph.png)
 ---
 
 ## Problem 3: Custom ML Kernels - Activations, Loss, Backprop (`ex03_ml_primitives.cu`)
@@ -89,6 +92,8 @@ Stride 32 is clearly slower due to heavy bank conflicts, while low-stride patter
 
 ### My Takeaway
 All core forward/backward primitive kernels now match CPU references and pass correctness checks.
+
+![Problem 3 Custom ML Kernels - Activations, Loss, Backprop ](problem3_activation_curves_graph.png)
 
 ---
 
@@ -119,6 +124,9 @@ All core forward/backward primitive kernels now match CPU references and pass co
 
 ### My Takeaway
 Tiled GEMM improves over naive, while cuBLAS is generally best at larger sizes. CNN primitives are correctly implemented and validated.
+
+![Problem 2 Tiled GEMM vs cuBLAS & CNN Layer Benchmarks](problem4_gemm_timing_graph.png)
+
 
 ---
 
