@@ -4,6 +4,11 @@ Adaptive sampling via **Centroidal Voronoi Tessellation (CVT)** with Lloyd's rel
 Parallelised with **OpenMP** (CPU) and **CUDA** (GPU, RTX 2050 / sm_86).
 
 ---
+## Submitted By : -
+Group - TryCatchers
+Piyush Biswal - 102303607
+Sarvagya Srivastava - 102303589
+Krish Bajaj - 102303470
 
 ## Project Structure
 
