@@ -1,0 +1,3 @@
+kernel,median_ms,penalty_vs_branchless
+branchless,0.097248,1.00
+divergent,0.095232,0.97927

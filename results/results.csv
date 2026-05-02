@@ -1,0 +1,2 @@
+backend,width,height,n_sites,threads,iterations,time_ms,error
+cuda,1024,1024,256,1,50,209.788,3.347198

@@ -1,0 +1,47 @@
+# Build outputs
+build/
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.exp
+
+# Generated binaries
+voronoi_cvt
+voronoi_cvt.exe
+bench_bandwidth
+bench_bandwidth.exe
+bench_blocksize
+bench_blocksize.exe
+
+# LaTeX build artifacts
+main.aux
+main.bbl
+main.blg
+main.fdb_latexmk
+main.fls
+main.lof
+main.lot
+main.log
+main.out
+main.pdf
+main.snm
+main.synctex.gz
+main.toc
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.vscode/
