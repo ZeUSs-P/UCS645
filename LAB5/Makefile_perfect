@@ -1,0 +1,16 @@
+MPI_CC = mpicc
+OPT_FLAGS = -O3 -Wall
+BIN = perfect_search_app
+SOURCES = perfect_search_master.c perf_num_validator.c
+NUM_NODES = 2
+
+all: $(BIN)
+
+$(BIN): $(SOURCES)
+	$(MPI_CC) $(OPT_FLAGS) $(SOURCES) -o $(BIN)
+
+execute: $(BIN)
+	mpirun --oversubscribe -np $(NUM_NODES) ./$(BIN)
+
+clean:
+	rm -f $(BIN)
